@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="sticky">
+    <h1>Galerie</h1>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="reiseziele.html">Reiseziele</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu">
+        <button id="menu-btn">☰ Menü</button>
+        <nav id="mobile-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="reiseziele.html">Reiseziele</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero-gallery">
+    <h2>Unsere schönsten Reisemomente</h2>
+
+    <div class="slider">
+        <button class="arrow left" id="prev">❮</button>
+
+        <img id="hero-image" src="images/reiseziel2.jpg" alt="Galeriebild">
+
+        <button class="arrow right" id="next">❯</button>
+    </div>
+
+    <p class="bildtext" id="bildtext">Strand mit Palmen – ein traumhafter Ort zum Entspannen.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 – Ingo Trost</p>
+</footer>
+
+<script>
+// Deine Bilder + Texte
+const bilder = [
+    {
+        src: "images/reiseziel2.jpg",
+        text: "Strand mit Palmen – ein traumhafter Ort zum Entspannen."
+    },
+    {
+        src: "images/flugzeug.jpg",
+        text: "Flugzeug über den Wolken – der Beginn eines neuen Abenteuers."
+    },
+    {
+        src: "images/santorin.avif",
+        text: "Santorin – weiße Häuser und blaue Kuppeln."
+    },
+    {
+        src: "images/kyoto.jpg",
+        text: "Kyoto – Kirschblüten und historische Tempel."
+    },
+    {
+        src: "images/bali.jpg",
+        text: "Bali – Reisterrassen und tropische Natur."
+    },
+    {
+        src: "images/vancouver.jpg",
+        text: "Vancouver – Skyline zwischen Bergen und Meer."
+    }
+];
+
+let index = 0;
+
+const heroImage = document.getElementById("hero-image");
+const bildtext = document.getElementById("bildtext");
+
+document.getElementById("next").addEventListener("click", () => {
+    index = (index + 1) % bilder.length;
+    updateBild();
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+    index = (index - 1 + bilder.length) % bilder.length;
+    updateBild();
+});
+
+function updateBild() {
+    heroImage.src = bilder[index].src;
+    bildtext.textContent = bilder[index].text;
+}
+
+// Smartphone-Menü
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('mobile-nav');
+btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

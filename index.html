@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Reiseseite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="sticky">
+    <h1>Kontakt</h1>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="reiseziele.html">Reiseziele</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu">
+        <button id="menu-btn">☰ Menü</button>
+        <nav id="mobile-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="reiseziele.html">Reiseziele</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h2>Willkommen auf meiner Reiseseite</h2>
+        <img src="images/logo.png"alt="Strand mit Palmen und Sonnenuntergang">
+        <p>Hier finden Sie spannende Informationen über beliebte Reiseziele, Flugrouten und wunderschöne Orte weltweit.</p>
+        <p>Ob Strandurlaub, Städtetrip oder Abenteuerreise – wir zeigen Ihnen die schönsten Plätze der Erde.</p>
+    </section>
+
+    <section>
+        <h2>Unsere Reiseziele</h2>
+        <p>Entdecken Sie faszinierende Orte rund um den Globus.</p>
+
+        <a href="reiseziele.html#vancouver">
+            <img src="images/reiseziel1.jpg" alt="Vancouver und Umgebung">
+        </a>
+        <a href="reiseziele.html#bali">
+            <img src="images/reiseziel2.jpg" alt="Bali und Umgebung">
+        </a>
+    </section>
+
+    <section>
+        <h2>Galerie</h2>
+        <p>Ein kleiner Einblick in unsere schönsten Reisemomente.</p>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <p>Sie haben Fragen oder möchten mehr erfahren? Schreiben Sie uns gerne eine Nachricht.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 – Ingo Trost</p>
+</footer>
+
+<script>
+    // Smartphone-Menü öffnen/schließen
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('mobile-nav');
+
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

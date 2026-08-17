@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="sticky">
+    <h1>Kontakt</h1>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="reiseziele.html">Reiseziele</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu">
+        <button id="menu-btn">☰ Menü</button>
+        <nav id="mobile-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="reiseziele.html">Reiseziele</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="kontakt-info">
+    <h2>Kontaktinformationen</h2>
+    <p>Sie möchten mehr über unsere Reiseangebote erfahren oder haben Fragen zu bestimmten Zielen? Dann schreiben Sie uns gerne – wir freuen uns auf Ihre Nachricht!</p>
+
+    <img src="images/max_mustermann.jpg" alt="Kontaktbild mit Briefumschlag und Telefon">
+
+    <div class="kontakt-details">
+        <p><strong>E-Mail:</strong> info@meine-reiseseite.de</p>
+        <p><strong>Telefon:</strong> 01234 / 567890</p>
+        <p><strong>Adresse:</strong> Musterstraße 12, 12345 Musterstadt</p>
+    </div>
+</section>
+
+<section class="kontakt-formular">
+    <h2>Kontaktformular</h2>
+    <form action="#" method="post">
+        <label for="name">Ihr Name:</label>
+        <input type="text" id="name" name="name" placeholder="Vor- und Nachname" required>
+
+        <label for="email">Ihre E-Mail-Adresse:</label>
+        <input type="email" id="email" name="email" placeholder="beispiel@domain.de" required>
+
+        <label for="betreff">Betreff:</label>
+        <input type="text" id="betreff" name="betreff" placeholder="Ihr Anliegen" required>
+
+        <label for="nachricht">Ihre Nachricht:</label>
+        <textarea id="nachricht" name="nachricht" rows="6" placeholder="Ihre Nachricht an uns..." required></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" id="datenschutz" required>
+            <label for="datenschutz">
+                Ich habe die <a href="datenschutz.html" target="_blank">>Datenschutzerklärung</a> gelesen und akzeptiere sie.
+            </label>
+        </div>
+
+        <button type="submit" class="senden-button">Nachricht senden</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 – Ingo Trost</p>
+</footer>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('mobile-nav');
+btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

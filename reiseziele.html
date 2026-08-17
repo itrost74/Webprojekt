@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Reiseziele</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="sticky">
+    <h1>Unsere schönsten Reiseziele</h1>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="reiseziele.html">Reiseziele</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu">
+        <button id="menu-btn">☰ Menü</button>
+        <nav id="mobile-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="reiseziele.html">Reiseziele</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section id="intro">
+    <h2>Entdecke die Welt mit uns</h2>
+    <p>Unsere Reiseziele führen dich zu den schönsten Orten der Erde – von exotischen Inseln bis zu pulsierenden Metropolen. Jedes Ziel bietet einzigartige Erlebnisse, kulturelle Highlights und unvergessliche Momente.</p>
+</section>
+
+<section id="ziele">
+
+    <article id="santorin">
+        <h3>1. Santorin – Griechenlands blaue Träume</h3>
+       <img src="images/santorin.avif" alt="Santorin mit weißen Häusern und blauen Kuppeln">
+        <p>Weiße Häuser mit blauen Kuppeln, spektakuläre Sonnenuntergänge über der Ägäis und charmante Gassen machen Santorin zu einem der romantischsten Orte Europas. Ideal für Paare und Fotografen.</p>
+    </article>
+
+    <article id="kyoto">
+        <h3>2. Kyoto – Japans kulturelles Herz</h3>
+        <img src="images/kyoto.jpg" alt="Kyoto mit Tempeln und Kirschblüten">
+        <p>Tempel, Schreine und traditionelle Teehäuser prägen das Bild dieser Stadt. Im Frühling verwandeln Kirschblüten Kyoto in ein rosa Meer – ein Fest für alle Sinne.</p>
+    </article>
+
+    <article id="kapstadt">
+        <h3>3. Kapstadt – Zwischen Meer und Tafelberg</h3>
+        <img src="images/kapstadt.webp" alt="Kapstadt mit Tafelberg und Meer">
+        <p>Kapstadt begeistert mit seiner Lage zwischen Ozean und Gebirge. Der Tafelberg bietet atemberaubende Ausblicke, während die Waterfront mit Musik und Lebensfreude lockt.</p>
+    </article>
+
+    <article id="reykjavik">
+        <h3>4. Reykjavik – Magie des Nordens</h3>
+        <img src="images/reykjavik.webp" alt="Reykjavik mit bunten Häusern und Nordlichtern">
+        <p>Die Hauptstadt Islands ist Ausgangspunkt für spektakuläre Naturerlebnisse: Geysire, Wasserfälle und Polarlichter. Ein Paradies für Abenteuerlustige und Fotografen.</p>
+    </article>
+
+    <article id="bali">
+        <h3>5. Bali – Insel der Götter</h3>
+        <img src="images/bali.jpg" alt="Bali mit Strand und Palmen">
+        <p>Grüne Reisterrassen, Tempel voller Mystik und traumhafte Strände – Bali vereint Spiritualität und Natur. Ideal für Yoga‑Reisen und Erholungssuchende.</p>
+    </article>
+
+    <article id="vancouver">
+        <h3>6. Vancouver – Natur trifft Großstadt</h3>
+        <img src="images/vancouver.jpg" alt="Vancouver mit Skyline und Bergen">
+        <p>Zwischen Pazifik und Bergen liegt eine der lebenswertesten Städte der Welt. Hier kannst du morgens Ski fahren und nachmittags am Strand spazieren gehen.</p>
+    </article>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 – Ingo Trost</p>
+</footer>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('mobile-nav');
+btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>

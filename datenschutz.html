@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="sticky">
+    <h1>Datenschutzerklärung</h1>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="reiseziele.html">Reiseziele</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu">
+        <button id="menu-btn">☰ Menü</button>
+        <nav id="mobile-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="reiseziele.html">Reiseziele</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section>
+    <h2>Allgemeine Hinweise</h2>
+    <p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Auf dieser Seite informieren wir Sie darüber, welche Daten auf unserer Reiseseite verarbeitet werden und zu welchem Zweck.</p>
+</section>
+
+<section>
+    <h2>Verantwortliche Stelle</h2>
+    <p><strong>Verantwortlich für diese Webseite:</strong></p>
+    <p>Meine Reiseseite<br>
+       Musterstraße 12<br>
+       12345 Musterstadt<br>
+       E-Mail: info@meine-reiseseite.de
+    </p>
+</section>
+
+<section>
+    <h2>Server-Logdateien</h2>
+    <p>Beim Aufruf dieser Webseite werden automatisch Informationen durch den Browser an den Server übermittelt (z.&nbsp;B. IP-Adresse, Datum und Uhrzeit des Abrufs, verwendeter Browser). Diese Daten dienen der technischen Bereitstellung der Seite und werden nicht zur Identifizierung einzelner Besucher verwendet.</p>
+</section>
+
+<section>
+    <h2>Kontaktformular</h2>
+    <p>Wenn Sie uns über das Kontaktformular eine Nachricht senden, werden die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, Betreff, Nachricht) zur Bearbeitung Ihrer Anfrage verwendet.</p>
+    <p>Diese Daten werden nicht ohne Ihre Einwilligung an Dritte weitergegeben.</p>
+</section>
+
+<section>
+    <h2>Cookies</h2>
+    <p>Unsere Beispielseite verwendet derzeit keine eigenen Cookies zur Analyse oder Werbung. Sollten zukünftig Cookies eingesetzt werden, informieren wir Sie an dieser Stelle und passen die Datenschutzerklärung entsprechend an.</p>
+</section>
+
+<section>
+    <h2>Ihre Rechte</h2>
+    <p>Sie haben das Recht auf Auskunft über die bei uns gespeicherten personenbezogenen Daten sowie auf Berichtigung, Löschung oder Einschränkung der Verarbeitung, soweit dem keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+</section>
+
+<section>
+    <h2>Änderungen dieser Datenschutzerklärung</h2>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 – Ingo Trost</p>
+</footer>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('mobile-nav');
+btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+</script>
+
+</body>
+</html>
